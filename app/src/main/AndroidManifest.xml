@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /><!--精确位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /><!--大致位置-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /><!--联网-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!--外部存储-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".WeatherApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Weather"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GoodWeatherNew"
+        tools:targetApi="31">
+        <activity
+            android:name=".manage.AddSchedule"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ManageCityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ui.MusicListActivity"
+            android:exported="true"></activity>
+
+        <activity
+            android:name=".ui.MusicActivity"
+            android:exported="false"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".manage.DailyManager"
+            android:exported="false" />
+        <activity
+            android:name=".manage.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".manage.EditScheduleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".manage.ManagerActivity"
+            android:exported="true" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="PyD9EATHmmhZIPTZKTFYZOlUu25DhISp" /><!--百度地图API密钥-->
+
+        <!--后台长时间执行的组件操作-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <service
+            android:name=".service.MusicService"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

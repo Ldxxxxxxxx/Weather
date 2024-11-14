@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.ldx.weather'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.ldx.weather"
+        minSdk 23
+        targetSdk 28
+        versionCode 25
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 自定义打包
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "Weather${variant.versionName}.apk"
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding true    //开启ViewBinding
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    //加载so文件
+    sourceSets{
+        main{
+            jniLibs.srcDir 'libs'
+            //disable automatic ndk-build
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.activity:activity:1.8.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    //依赖子模块
+    implementation project(path: ':library')
+    //Room数据库
+    implementation 'androidx.room:room-runtime:2.4.2'
+    annotationProcessor 'androidx.room:room-compiler:2.4.2'
+    //Room 支持RxJava2
+    implementation 'androidx.room:room-rxjava2:2.4.2'
+    //腾讯MMKV
+    implementation 'com.tencent:mmkv:1.2.14'
+    //Gson
+    implementation 'com.google.code.gson:gson:2.9.0'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+    //下拉刷新
+   // 插件升级后出现kotlin-stdlib-jdk版本冲突在这里解决
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.20")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.20")
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.core:core-ktx:1.6.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+
+
+
+}

@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="1000dp"
+    android:background="@drawable/manager_bg"
+    android:paddingBottom="@dimen/dp_16">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_cond_txt_d_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:srcCompat="@mipmap/icon_101d" />
+
+    <!--最高温-->
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_uv_index_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView20"
+        app:srcCompat="@mipmap/icon_100d" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_cond_txt_n_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
+        app:srcCompat="@mipmap/icon_101n" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_cloud_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:srcCompat="@mipmap/icon_104n" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_wind_spd_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:srcCompat="@mipmap/icon_200n" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_pcpn_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+        app:srcCompat="@mipmap/icon_310n" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_wind_deg_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:srcCompat="@mipmap/icon_503d" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_wind_sc_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView23"
+        app:srcCompat="@mipmap/icon_507n" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/icon_900d" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_tmp_min_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19"
+        app:srcCompat="@mipmap/icon_901d" />
+
+    <ImageView
+        android:id="@+id/imageView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_wind_dir_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17"
+        app:srcCompat="@mipmap/icon_504n" />
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_vis_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16"
+        app:srcCompat="@mipmap/icon_502n" />
+
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_pres_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView29"
+        app:srcCompat="@mipmap/icon_510n" />
+
+    <ImageView
+        android:id="@+id/imageView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_hum_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:srcCompat="@mipmap/icon_317n" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="221dp"
+        android:layout_height="149dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_daily"
+        app:srcCompat="@mipmap/icon_301" />
+
+    <TextView
+        android:id="@+id/tv_tmp_max_title"
+        android:layout_width="32dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="180dp"
+        android:layout_weight="1"
+        android:text="最高温"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_daily" />
+
+    <TextView
+        android:id="@+id/tv_tmp_max"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/tv_tmp_max_title" />
+    <!--最低温-->
+
+    <TextView
+        android:id="@+id/tv_wind_deg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_wind_deg_title" />
+    <!--紫外线强度-->
+
+    <TextView
+        android:id="@+id/tv_cloud"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_cloud_title" />
+    <!--白天天气状况-->
+
+    <TextView
+        android:id="@+id/tv_vis"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_vis_title" />
+    <!--晚上天气状况-->
+
+
+    <TextView
+        android:id="@+id/tv_pcpn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_pcpn_title" />
+    <!--风向360角度-->
+
+    <TextView
+        android:id="@+id/tv_cond_txt_d"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_cond_txt_d_title" />
+    <!--风向-->
+
+    <TextView
+        android:id="@+id/tv_tmp_min"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_tmp_min_title" />
+    <!--风力-->
+
+    <TextView
+        android:id="@+id/tv_uv_index"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_uv_index_title" />
+    <!--风速-->
+
+    <TextView
+        android:id="@+id/tv_hum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_hum_title" />
+    <!--云量-->
+
+
+    <TextView
+        android:id="@+id/tv_wind_dir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_wind_dir_title" />
+    <!--相对湿度-->
+
+    <TextView
+        android:id="@+id/tv_wind_spd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_wind_spd_title" />
+    <!--大气压强-->
+
+    <TextView
+        android:id="@+id/tv_cond_txt_n"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_cond_txt_n_title" />
+    <!--降水量-->
+
+    <TextView
+        android:id="@+id/tv_pres"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_pres_title" />
+    <!--能见度-->
+
+    <TextView
+        android:id="@+id/tv_wind_sc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/tv_tmp_max"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max"
+        app:layout_constraintTop_toTopOf="@+id/tv_wind_sc_title" />
+
+    <TextView
+        android:id="@+id/tv_tmp_min_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="最低温"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tmp_max_title" />
+
+    <TextView
+        android:id="@+id/tv_uv_index_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="紫外线强度"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_tmp_min_title" />
+
+    <TextView
+        android:id="@+id/tv_cond_txt_d_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="白天天气状况"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_uv_index_title" />
+
+    <TextView
+        android:id="@+id/tv_cond_txt_n_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="晚上天气状况"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cond_txt_d_title" />
+
+    <TextView
+        android:id="@+id/tv_wind_deg_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="风向360角度"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cond_txt_n_title" />
+
+    <TextView
+        android:id="@+id/tv_wind_dir_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="风向"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wind_deg_title" />
+
+    <TextView
+        android:id="@+id/tv_wind_sc_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="风力"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_wind_dir_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wind_dir_title" />
+
+    <TextView
+        android:id="@+id/tv_wind_spd_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="风速"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wind_sc_title" />
+
+    <TextView
+        android:id="@+id/tv_cloud_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="云量"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_wind_spd_title" />
+
+    <TextView
+        android:id="@+id/tv_hum_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="相对湿度"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cloud_title" />
+
+    <TextView
+        android:id="@+id/tv_pres_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="大气压强"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hum_title" />
+
+    <TextView
+        android:id="@+id/tv_pcpn_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="降水量"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pres_title" />
+
+    <TextView
+        android:id="@+id/tv_vis_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="能见度"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/tv_tmp_max_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pcpn_title" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="205dp" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_daily"
+        android:layout_width="347dp"
+        android:layout_height="64dp"
+        android:background="@color/transparent"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_round_close_24" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

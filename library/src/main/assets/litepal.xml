@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--数据库名称-->
+    <dbname value="GoodWeather" />
+    <!--数据库版本-->
+    <version value="2" />
+
+    <!--数据列表-->
+    <list>
+    </list>
+</litepal>

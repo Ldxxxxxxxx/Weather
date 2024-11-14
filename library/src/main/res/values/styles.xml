@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--白色风车-->
+    <declare-styleable name="WhiteWindmills">
+        <attr name="windColor" format="reference|color" />
+    </declare-styleable>
+
+    <!--弹窗样式-->
+    <style name="AnimationRightFade"><!--右侧-->
+        <item name="android:windowEnterAnimation">@anim/in_right_to_left</item>  <!--打开动画-->
+        <item name="android:windowExitAnimation">@anim/out_left_to_right</item>  <!--关闭动画-->
+    </style>
+
+    <style name="AnimationBottomFade"><!--底部-->
+        <item name="android:windowEnterAnimation">@anim/in_bottom_to_top</item>
+        <item name="android:windowExitAnimation">@anim/out_top_to_bottom</item>
+    </style>
+
+    <style name="AnimationCenterFade"><!--中间-->
+        <item name="android:windowEnterAnimation">@anim/window_show_anim</item>
+        <item name="android:windowExitAnimation">@anim/window_hidden_anim</item>
+    </style>
+
+    <!--加载弹窗的样式-->
+    <style name="loading_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!--圆环进度条-->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="round_max_progress" format="float" />
+        <attr name="round_bg_color" format="color" />
+        <attr name="round_stroke_width" format="dimension" />
+        <attr name="round_progress" format="float" />
+        <attr name="round_progress_color" format="color" />
+        <attr name="round_first_text" format="string" />
+        <attr name="round_first_text_color" format="color" />
+        <attr name="round_first_text_size" format="dimension" />
+        <attr name="round_second_text" format="string" />
+        <attr name="round_second_text_color" format="color" />
+        <attr name="round_second_text_size" format="dimension" />
+        <attr name="round_min_text" format="string" />
+        <attr name="round_min_text_color" format="color" />
+        <attr name="round_min_text_size" format="dimension" />
+        <attr name="round_max_text" format="string" />
+        <attr name="round_max_text_color" format="color" />
+        <attr name="round_max_text_size" format="dimension" />
+        <attr name="round_angle_size" format="float" />
+        <attr name="round_start_angle" format="float" />
+    </declare-styleable>
+
+    <!--右上角加号点击弹窗动画效果-->
+    <style name="pop_add">
+        <item name="android:windowEnterAnimation">@anim/pop_add_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_add_hide</item>
+    </style>
+
+    <!--开关按钮-->
+    <declare-styleable name="SwitchButton">
+        <attr name="sb_shadow_radius" format="reference|dimension" />
+        <attr name="sb_shadow_offset" format="reference|dimension" />
+        <attr name="sb_shadow_color" format="reference|color" />
+        <attr name="sb_uncheck_color" format="reference|color" />
+        <attr name="sb_checked_color" format="reference|color" />
+        <attr name="sb_border_width" format="reference|dimension" />
+        <attr name="sb_checkline_color" format="reference|color" />
+        <attr name="sb_checkline_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_color" format="reference|color" />
+        <attr name="sb_uncheckcircle_width" format="reference|dimension" />
+        <attr name="sb_uncheckcircle_radius" format="reference|dimension" />
+        <attr name="sb_checked" format="reference|boolean" />
+        <attr name="sb_shadow_effect" format="reference|boolean" />
+        <attr name="sb_effect_duration" format="reference|integer" />
+        <attr name="sb_button_color" format="reference|color" />
+        <attr name="sb_show_indicator" format="reference|boolean" />
+        <attr name="sb_background" format="reference|color" />
+        <attr name="sb_enable_effect" format="reference|boolean" />
+    </declare-styleable>
+
+    <!--历史记录-->
+    <declare-styleable name="TagFlowLayout">
+        <!--最大选择数量-->
+        <attr name="max_select" format="integer" />
+        <!--最大可显示行数-->
+        <attr name="limit_line_count" format="integer" />
+        <!--是否设置多行隐藏-->
+        <attr name="is_limit" format="boolean" />
+        <attr name="tag_gravity">
+            <enum name="left" value="-1" />
+            <enum name="center" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+    </declare-styleable>
+    <!--折线图-->
+    <declare-styleable name="WeatherChartView">
+        <attr name="textColor" format="color"/>
+        <attr name="dayTextColor" format="color"/>
+        <attr name="nightTextColor" format="color"/>
+        <attr name="dayColor" format="color"/>
+        <attr name="nightColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+
+    <!--线性进度条-->
+    <declare-styleable name="LineProgressbar">
+        <attr name="progressbar_width" format="dimension"/>
+        <attr name="progressbar_height" format="dimension"/>
+    </declare-styleable>
+
+    <!--自定义对话框-->
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--对话框弹出和消失动画-->
+    <style name="dialog_from_bottom_anim">
+        <item name="android:windowEnterAnimation">@anim/dialog_from_bottom_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_from_bottom_anim_out</item>
+    </style>
+
+    <style name="dialog_from_top_anim">
+        <item name="android:windowEnterAnimation">@anim/dialog_from_top_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_from_top_anim_out</item>
+    </style>
+
+    <style name="dialog_scale_anim">
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_anim_out</item>
+    </style>
+
+
+    <declare-styleable name="RoundImageView">
+        <attr name="radius" format="dimension"/>
+        <attr name="left_top_radius" format="dimension"/>
+        <attr name="right_top_radius" format="dimension"/>
+        <attr name="right_bottom_radius" format="dimension"/>
+        <attr name="left_bottom_radius" format="dimension"/>
+    </declare-styleable>
+
+    <!-- 圆角图片 -->
+    <style name="roundedCornerStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dp_16</item>
+    </style>
+
+
+</resources>

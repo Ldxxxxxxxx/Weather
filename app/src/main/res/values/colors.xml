@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="temp_min_tx">#B3BCCA</color><!--低温文字颜色-->
+    <color name="line_color">#EEEEEE</color>
+    <color name="tx_color">#201E1E</color><!--未选中文字颜色-->
+    <color name="ari_tx_color">#FFFFFF</color><!--空气提示文字颜色-->
+    <color name="arc_bg_color">#C6D7F4</color>
+    <color name="arc_progress_color">#FBFEF7</color>
+    <color name="bg_color">#F8F8F8</color><!--页面背景颜色-->
+    <color name="btn_ripple_color">#B5B3B3</color><!--按钮触摸颜色-->
+    <color name="card_ripple_color">#A8C0EC</color><!--卡片视图触摸颜色-->
+    <color name="transparent">#00000000</color><!--透明-->
+    <color name="details">#44000000</color>
+    <color name="yellow">#D6CB99</color>
+    <color name="grey">#888885</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3E86A0</color>
+    <color name="flow">#F5F5F5</color>
+</resources>
